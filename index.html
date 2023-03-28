@@ -1,0 +1,47 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expanse Tracker</title>
+    
+</head>
+<body>
+    <div class="mainBox"> 
+        <header class="header">Your Candy Data</header>
+    <form id="myform">
+<label for="expanse">Candy_Name</label>
+<input type="text" name="expanse" id="expanse">
+<label for="Description">Description</label>
+<input list="Description" name="Description" id="descriptionInput">
+<datalist id="Description">
+<option value="chocolaty">chocolaty</option>
+<option value="salty">salty</option>
+<option value="khatta-metha">khatta-metha</option>
+</datalist>
+<label for="quantity">Quantity</label>
+<input type="number" name="quantity" id="quantity">
+<label for="category">Category : </label>
+<select name="category" id="category">
+    <option value=0>0</option>
+    <option value=1>1</option>
+    <option value=2>2</option>
+    <option value=3>3</option>
+</select>
+<input type="hidden" id="expanseId" name="expanseId">
+<input type="submit" id="submit" value="Submit">
+
+    </form>
+</div>
+    <div class="display" id="display">
+        <ul id="displayList">
+          
+        </ul>
+    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.2.0/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
